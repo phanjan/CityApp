@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/adamina</item>
+        <item>@font/anton</item>
+        <item>@font/baloo</item>
+        <item>@font/bungee</item>
+        <item>@font/muli_extralight</item>
+    </array>
+</resources>

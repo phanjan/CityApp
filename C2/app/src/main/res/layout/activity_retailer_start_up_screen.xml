@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetailerStartUpScreen"
+    android:background="@color/white"
+    android:padding="30dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            app:lottie_rawRes="@raw/happy_raccoon"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_speed="2"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/circle_icon1" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grow\nYour Business"
+            android:textSize="36sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/baloo"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="60dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WE WILL HELP YOU TO GROW YOUR BUSINESS USING ONLINE SERVICE!"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            >
+
+            <Button
+                android:id="@+id/login_btn"
+                android:onClick="callLoginScreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:fontFamily="@font/baloo"
+                android:textSize="22dp"
+                android:layout_margin="5dp"
+                android:layout_marginRight="10dp"
+                android:transitionName="transition_login"
+                />
+            <Button
+                android:id="@+id/signup_btn"
+                android:onClick="callSignUpScreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:fontFamily="@font/baloo"
+                android:textSize="22dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:transitionName="transition_sign_up"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOW WE WORK?"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/baloo"
+            android:textSize="22dp"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>
